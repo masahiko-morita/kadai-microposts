@@ -122,6 +122,6 @@ public function unfavorite($micropostId)
 
 
 public function is_favoriting($userId) {
-    return $this->favorites()->where('follow_id', $userId)->exists();
+    return $this->favorites()->where('favorite_id', $userId)->exists();
 }    
 }
