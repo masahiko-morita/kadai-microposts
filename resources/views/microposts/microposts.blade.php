@@ -18,7 +18,8 @@
                         {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
                     {!! Form::close() !!}
                 @endif
-            </div>    
+            </div>
+                @include('user_favorite.favorite_button', ['user' => $user])
         </div>
     </li>
 @endforeach
