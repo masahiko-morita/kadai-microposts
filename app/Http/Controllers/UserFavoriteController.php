@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class UserFavoriteController extends Controller
 {
-    public function store(Request $request, $id)
+    public function store(Request $request, $micropost_id)
     {
-        \Auth::user()->favorite($id);
+        \Auth::user()->favorite($micropost_id);
         return redirect()->back();
     }
 
